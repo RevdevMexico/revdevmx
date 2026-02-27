@@ -1,11 +1,12 @@
 "use server"
 
 import { generateText } from "ai"
+import { openai } from "@ai-sdk/openai"
 
 export async function sendChatMessage(message: string) {
   try {
     const { text } = await generateText({
-      model: "openai/gpt-4o-mini",
+      model: openai("gpt-4o-mini"),
       system: `Eres el asistente virtual de RevDev Solutions México, una empresa de desarrollo web en Guadalajara, México. 
 
 INFORMACIÓN DE LA EMPRESA:
