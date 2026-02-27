@@ -918,7 +918,7 @@ export default function Component() {
           }`}
           style={{ transitionDelay: isFooterVisible ? "800ms" : "0ms" }}
         >
-          <p className="text-xs text-gray-400">© 2025 Revdev Solutions México - Desarrollo Web en Guadalajara</p>
+            <p className="text-xs text-gray-400">© {new Date().getFullYear()} Revdev Solutions México - Desarrollo Web en Guadalajara</p>
           <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
             <Link className="text-xs hover:underline underline-offset-4 text-gray-400 hover:text-gray-300" href="#">
               Términos de Servicio

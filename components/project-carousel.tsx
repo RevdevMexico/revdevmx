@@ -59,7 +59,7 @@ const LOCAL_PROJECTS: Project[] = [
     description: "Página web corpporativa",
     project_url: "https://amazonainternational.com",
     technologies: ["Next JS", "React"],
-    logo_url: "/logos/amazona.png",
+    logo_url: "/logos/amazona1.png",
     images: [],
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
