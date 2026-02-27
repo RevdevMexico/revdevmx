@@ -57,7 +57,7 @@ const LOCAL_PROJECTS: Project[] = [
     name: "Amazona Produce International",
     year: 2026,
     description: "Página web corpporativa",
-    project_url: "https://example.com/proyecto3",
+    project_url: "https://amazonainternational.com",
     technologies: ["Next JS", "React"],
     logo_url: "/logos/amazona.png",
     images: [],
