@@ -98,4 +98,20 @@ export const analytics = {
       console.warn("Analytics error:", error)
     }
   },
+
+  // Track contact form submissions
+  contactFormSubmit: (data: { name: string; email: string; company?: string }) => {
+    try {
+      console.log(`Analytics: Contact form submitted`, data)
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        ;(window as any).gtag("event", "contact_form_submit", {
+          name: data.name,
+          email: data.email,
+          company: data.company || "Not specified",
+        })
+      }
+    } catch (error) {
+      console.warn("Analytics error:", error)
+    }
+  },
 }
